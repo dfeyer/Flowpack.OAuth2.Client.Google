@@ -1,0 +1,16 @@
+Flowpack\OAuth2\Client\Google\ApiClient:
+  properties:
+    requestEngine:
+      object:
+        name: 'Neos\Flow\Http\Client\CurlEngine'
+    appSecret:
+      setting: 'Neos.Flow.security.authentication.providers.GoogleOAuth2Provider.providerOptions.clientSecret'
+
+Flowpack\OAuth2\Client\Google\TokenEndpoint:
+  properties:
+    endpointUri:
+      setting: 'Neos.Flow.security.authentication.providers.GoogleOAuth2Provider.providerOptions.tokenEndpointUri'
+    clientIdentifier:
+      setting: 'Neos.Flow.security.authentication.providers.GoogleOAuth2Provider.providerOptions.clientIdentifier'
+    clientSecret:
+      setting: 'Neos.Flow.security.authentication.providers.GoogleOAuth2Provider.providerOptions.clientSecret'
